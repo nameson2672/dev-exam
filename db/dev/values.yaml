@@ -5,8 +5,8 @@ db:
     env: dev
     stack: wordpress
   image:
-    repository: mariadb
-    tag: 10.6.4-focal
+    repository: mysql
+    tag: latest
     pullPolicy: Always
   replicas: 1
   configmap:
