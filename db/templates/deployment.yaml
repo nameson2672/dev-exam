@@ -28,9 +28,9 @@ spec:
         ports:
         - containerPort: {{ .Values.db.containerPorts.mysql }}
         volumeMounts:
-        - name: {{ .Values.db.name }}-volume
+        - name: {{ .Values.db.name }}-volumes
           mountPath: /var/lib/mysql       # Path inside container
       volumes:
-      - name: {{ .Values.db.name }}-volume
+      - name: {{ .Values.db.name }}-volumes
         hostPath:
           path: /var/lib/wp-data     # Path in host machine
