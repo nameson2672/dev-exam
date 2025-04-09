@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: "1.25.3"
+  repository: nameson/k8s-ngixn-exam
+  tag: "latest"
   pullPolicy: IfNotPresent
 
 service:
